@@ -1,0 +1,29 @@
+<!-- templates/create_payment_form.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Payment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='create_payment_form.css') }}">
+</head>
+<body>
+    <h1>Create Payment</h1>
+    <form action="/create-payment" method="post">
+        <label for="total">Total:</label>
+        <input type="text" id="total" name="total" required placeholder="Payment amount"><br><br>
+
+        <label for="currency">Currency:</label>
+        <select id="currency" name="currency" required>
+            <option value="USD">USD</option>
+            <option value="RUR">RUR</option>
+            <option value="AMD">AMD</option>
+            <!-- Add other currencies as needed -->
+        </select><br><br>
+
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" required placeholder="Purpose of transaction"><br><br>
+
+        <button type="submit">Create Payment</button>
+    </form>
+</body>
+</html>

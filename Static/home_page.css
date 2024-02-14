@@ -1,0 +1,56 @@
+html {
+    height: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 0; /* Remove default margin */
+    height: 100%; /* Make sure the body takes up at least the whole viewport height */
+    background-image: url('../static/images/Background.png');
+    background-size: cover;
+    background-position: -120px center;
+    background-repeat: no-repeat;
+}
+
+
+body::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%; /* Adjust this as needed */
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    z-index: 2;
+}
+
+/* Make sure content is on top of the pseudo-element */
+body * {
+    position: relative;
+    z-index: 3;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    background: linear-gradient(to left, #4CAF50 25%, rgba(76, 175, 80, 0) 80%);
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+footer {
+    margin-top: 30px;
+}

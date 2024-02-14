@@ -1,0 +1,43 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    margin: 20px 0;
+    color: #555;
+}
+
+a {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: #45a049;
+}
+
+/* Specific styles for different pages */
+.success {
+    color: #28a745;
+}
+
+.failure {
+    color: #dc3545;
+}
+
+.error {
+    color: #ffc107;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='home_page.css') }}">
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to the Payment System</h1>
+        </header>
+        <nav>
+            <!-- Navigation links go here (if you have other pages) -->
+        </nav>
+        <main>
+            <p>Manage all your transactions with ease and security.</p>
+            <form action="/create-payment">
+                <input type="submit" value="Create Payment" class="btn">
+            </form>
+        </main>
+
+        <footer>
+            <p>Contact us at contact@example.com</p>
+            <!-- Social media links can be added here -->
+        </footer>
+    </body>
+</html>
